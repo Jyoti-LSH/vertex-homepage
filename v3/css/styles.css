@@ -185,3 +185,30 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;
   .btn{width:100%;}
   .nav .btn{width:auto;}
 }
+
+/* Footer legal links -------------------------------------------- */
+.flinks{display:flex;gap:16px;flex-wrap:wrap;align-items:center;}
+.flinks a{color:var(--muted);font-size:.82rem;letter-spacing:.02em;}
+.flinks a:hover{color:var(--gold);}
+.flinks .sep{color:var(--line);}
+
+/* Legal pages --------------------------------------------------- */
+.legal{max-width:760px;margin:0 auto;padding:64px 28px 16px;}
+.legal .eyebrow{margin-bottom:14px;}
+.legal h1{font-size:clamp(2rem,4vw,3rem);margin-bottom:8px;}
+.legal .updated{color:var(--muted-2);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;margin:0 0 32px;}
+.legal .intro{color:var(--muted);font-size:1.12rem;line-height:1.6;margin-bottom:8px;}
+.legal h2{font-size:1.5rem;margin:40px 0 12px;color:#fff;}
+.legal h3{font-family:var(--sans);font-size:1rem;font-weight:600;color:var(--gold-soft);
+  letter-spacing:.01em;margin:24px 0 8px;}
+.legal p,.legal li{color:var(--text);font-size:1rem;line-height:1.72;}
+.legal p{margin:0 0 1em;}
+.legal ul,.legal ol{margin:0 0 1.2em;padding-left:1.35em;}
+.legal li{margin-bottom:.5em;}
+.legal li::marker{color:var(--gold);}
+.legal strong{color:#fff;}
+.legal a{color:var(--gold);}
+.legal hr{border:0;height:1px;background:var(--line-soft);margin:40px 0;}
+.legal .callout{border-left:2px solid var(--gold);background:var(--navy-2);
+  padding:18px 22px;margin:0 0 1.4em;color:var(--muted);border-radius:0 6px 6px 0;}
+.legal .backhome{display:inline-block;margin-top:8px;font-size:.86rem;}
