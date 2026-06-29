@@ -60,6 +60,7 @@ p{margin:0 0 1em;}
 .nav a{color:var(--muted);font-size:.86rem;letter-spacing:.02em;}
 .nav a:hover{color:#fff;}
 .nav .btn{padding:11px 22px;}
+.nav a.btn-gold, .nav a.btn-gold:hover{color:#0a0a0a;}   /* keep button label dark on gold */
 @media(max-width:760px){.nav a:not(.btn){display:none;}}
 
 /* Buttons -------------------------------------------------------- */
