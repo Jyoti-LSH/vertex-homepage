@@ -1,24 +1,24 @@
 <!doctype html>
 <!--
-  Vertex Global Access — "Keep Dubai, Build Plan B" ad-funnel landing page (DRAFT · premium redesign).
+  Vertex Global Access — UK second-residency funnel landing page (DRAFT · pre-exit-founder audience).
+  Positioning: decision-diligence ("stress-test the decision before you choose") per the business-strategy research.
+  Flow: book a private call (free fit-call) → a qualifier filters → on the call, sell the PAID diagnostic + plan → execution is the later upsell.
   Hallmark · macrostructure: Long Document (editorial-luxury) · tone: luxury/discreet · anchor hue: gold (brass ~80°)
-  pre-emit critique: P5 H5 E4 S4 R5 V4
-  Self-contained (inline CSS) so it renders styled anywhere and drops into WordPress as one Custom HTML block.
-  Compliance-passed 2026-09-17: no jurisdictions/partners named · no price · no guarantees · no conflict/war imagery.
-  Primary CTA is an interim mailto — wire to the qualifier → Dan's booking calendar (Calendly/Cal.com).
+  Compliance: advisory/coordination only, not FCA-regulated; no promised tax/residency outcome; tax as considerations; no jurisdictions named.
+  ⚠️ FLAG FOR DAN before publishing: the "paid for advice, not for placing you" independence line is only usable if Vertex genuinely forgoes partner commissions — confirm the fee model.
+  CTA/qualifier is an interim mailto — wire to a real form (Tally/Typeform) → Dan's booking calendar.
 -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Keep Dubai. Build the Second Option. — Vertex Global Access</title>
-<meta name="description" content="For UK-connected founders and investors based in the UAE: a tax-aware second-residency strategy that keeps Dubai — book a private call with Vertex Global Access.">
+<title>Stress-test the decision — Vertex Global Access</title>
+<meta name="description" content="For UK founders and business owners weighing a second residency: a private, independent review that stress-tests the decision before you choose. Book a call with Vertex Global Access.">
 <meta name="robots" content="noindex,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-/* ── Tokens ─────────────────────────────────────────────── */
 :root{
   --navy:#080B13; --navy-2:#0B0F1A; --panel:#10151F; --panel-2:#131926;
   --line:#212A3C; --line-soft:#171E2C; --line-gold:rgba(198,162,76,.34);
@@ -40,32 +40,25 @@ body{margin:0;background:var(--navy);color:var(--text);font-family:var(--sans);
     radial-gradient(760px 620px at 4% 116%,rgba(198,162,76,.045),transparent 62%);
   background-attachment:fixed;}
 ::selection{background:rgba(198,162,76,.26);color:#fff;}
-
 h1,h2,h3{font-family:var(--serif);font-weight:500;font-style:normal;color:var(--ivory);
   margin:0;line-height:1.06;letter-spacing:.01em;overflow-wrap:anywhere;min-width:0;}
-h1{font-size:clamp(2.9rem,6.2vw,5.2rem);}
-h2{font-size:clamp(2rem,4vw,3.2rem);}
+h1{font-size:clamp(2.7rem,5.6vw,4.7rem);}
+h2{font-size:clamp(1.9rem,3.8vw,3rem);}
 h3{font-size:1.28rem;color:#fff;}
 p{margin:0 0 1.05em;}
 a{color:var(--gold);text-decoration:none;transition:color .18s var(--ease-out);}
 a:hover{color:var(--gold-2);}
 em{font-style:italic;color:var(--ivory);}
 .gold{color:var(--gold);} .ivory{color:var(--ivory);} .muted{color:var(--muted);}
-
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px;}
 .col{max-width:760px;}
 .section{padding:var(--s6) 0;position:relative;}
-.rule{height:1px;background:linear-gradient(90deg,var(--line-gold),transparent);border:0;margin:0;}
-
-/* Eyebrows + editorial numerals */
 .eyebrow{font-family:var(--sans);font-size:.7rem;font-weight:600;letter-spacing:.34em;
   text-transform:uppercase;color:var(--gold);margin:0 0 22px;}
 .eyebrow.dim{color:var(--muted-2);}
 .numeral{font-family:var(--serif);font-size:1.05rem;letter-spacing:.42em;color:var(--gold);
   text-transform:uppercase;margin:0 0 18px;display:flex;align-items:center;gap:16px;}
 .numeral::after{content:"";flex:1;height:1px;background:var(--line-soft);max-width:180px;}
-
-/* ── Top bar ────────────────────────────────────────────── */
 .topbar{position:sticky;top:0;z-index:30;background:rgba(8,11,19,.72);
   backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft);}
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:74px;}
@@ -73,8 +66,6 @@ em{font-style:italic;color:var(--ivory);}
 .brand .dot{color:var(--gold);}
 .brand small{display:block;font-family:var(--sans);font-size:.54rem;letter-spacing:.4em;
   text-transform:uppercase;color:var(--muted-2);margin-top:-1px;}
-
-/* ── Buttons ────────────────────────────────────────────── */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;white-space:nowrap;
   font-family:var(--sans);font-size:.86rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
   padding:15px 30px;border-radius:1px;cursor:pointer;border:1px solid transparent;
@@ -86,61 +77,46 @@ em{font-style:italic;color:var(--ivory);}
 .btn.sm{padding:12px 22px;font-size:.76rem;}
 .btn:focus-visible{outline:2px solid var(--gold-2);outline-offset:3px;}
 .btn-row{display:flex;gap:14px;flex-wrap:wrap;}
-
-/* ── Hero ───────────────────────────────────────────────── */
-.hero{padding:clamp(72px,11vw,128px) 0 clamp(56px,8vw,96px);position:relative;overflow:hidden;}
+.hero{padding:clamp(72px,11vw,124px) 0 clamp(56px,8vw,92px);position:relative;overflow:hidden;}
 .hero:before{content:"";position:absolute;inset:0;pointer-events:none;
   background-image:linear-gradient(var(--line-soft) 1px,transparent 1px),linear-gradient(90deg,var(--line-soft) 1px,transparent 1px);
   background-size:72px 72px;opacity:.14;
   mask-image:radial-gradient(760px 460px at 74% 26%,#000,transparent 76%);}
 .hero .wrap{position:relative;}
-.hero h1{max-width:15ch;}
+.hero h1{max-width:18ch;}
 .hero .sub{font-family:var(--serif);font-size:clamp(1.35rem,2.3vw,1.85rem);color:var(--gold-2);
-  font-weight:500;margin:24px 0 20px;max-width:26ch;line-height:1.24;}
-.hero .intro{max-width:58ch;font-size:1.12rem;color:var(--muted);margin-bottom:var(--s4);}
+  font-weight:500;margin:24px 0 20px;max-width:34ch;line-height:1.24;}
+.hero .intro{max-width:60ch;font-size:1.12rem;color:var(--muted);margin-bottom:var(--s4);}
 .hero .seal{margin-top:var(--s4);display:flex;align-items:center;gap:16px;color:var(--muted-2);
-  font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;}
+  font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;flex-wrap:wrap;}
 .hero .seal .dot{width:4px;height:4px;border-radius:50%;background:var(--gold);opacity:.7;}
-
-/* ── Editorial statement / lede ─────────────────────────── */
 .statement{background:var(--navy-2);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);}
-.lede{font-family:var(--serif);font-size:clamp(1.5rem,2.7vw,2.05rem);line-height:1.42;color:var(--ivory);
-  font-weight:500;max-width:22ch;}
-.body-lg{font-size:1.12rem;color:var(--muted);max-width:var(--measure);}
+.lede,.body-lg{font-size:1.12rem;color:var(--muted);max-width:var(--measure);}
 .dropcap::first-letter{font-family:var(--serif);font-weight:600;color:var(--gold);
   float:left;font-size:4.2rem;line-height:.72;padding:8px 14px 0 0;}
 .kicker{font-family:var(--serif);font-size:1.3rem;color:var(--ivory);}
-
-/* ── Two-option ledger + third option ──────────────────── */
 .ledger{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;
   border:1px solid var(--line-soft);border-radius:2px;overflow:hidden;margin-top:var(--s3);}
 .ledger .opt{padding:34px 32px;background:var(--panel);}
 .ledger .opt:first-child{border-right:1px solid var(--line-soft);}
-.ledger .opt .lbl{font-family:var(--sans);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--muted-2);margin:0 0 14px;}
+.ledger .opt .lbl{font-family:var(--sans);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-2);margin:0 0 14px;}
 .ledger .opt h3{font-family:var(--serif);font-size:1.5rem;margin:0 0 10px;color:var(--ivory);}
 .ledger .opt p{margin:0;color:var(--muted);font-size:.98rem;}
 .third{margin-top:20px;position:relative;padding:40px 38px;border-radius:2px;
   background:linear-gradient(158deg,#15192a,#0f1320);border:1px solid var(--line-gold);}
 .third:before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:var(--gold);}
 .third .lbl{font-family:var(--sans);font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin:0 0 12px;}
-.third h3{font-family:var(--serif);font-size:clamp(1.6rem,2.6vw,2.15rem);color:#fff;margin:0 0 12px;max-width:26ch;}
+.third h3{font-family:var(--serif);font-size:clamp(1.6rem,2.6vw,2.15rem);color:#fff;margin:0 0 12px;max-width:30ch;}
 .third p{margin:0;color:var(--muted);max-width:var(--measure);}
-
-/* ── Mechanism + figure ─────────────────────────────────── */
 .mech{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,72px);align-items:center;}
-.figure{margin:0;}
-.figure svg{width:100%;height:auto;display:block;}
-.figure figcaption{margin-top:18px;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--muted-2);text-align:center;}
-.points{list-style:none;margin:var(--s4) 0 0;padding:0;}
-.points li{padding:22px 0;border-top:1px solid var(--line-soft);}
-.points li:last-child{border-bottom:1px solid var(--line-soft);}
-.points h3{font-family:var(--sans);font-size:1.02rem;font-weight:600;color:var(--ivory);margin:0 0 6px;}
-.points p{margin:0;color:var(--muted);font-size:.98rem;}
-.mono-note{max-width:var(--measure);color:var(--muted);margin-top:var(--s4);font-size:1.08rem;}
-
-/* ── Fit lists ──────────────────────────────────────────── */
+.figure{margin:0;} .figure svg{width:100%;height:auto;display:block;}
+.figure figcaption{margin-top:18px;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-2);text-align:center;}
+.mono-note{max-width:var(--measure);color:var(--muted);font-size:1.08rem;}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;}
+.step{padding:30px 26px;background:var(--panel);border:1px solid var(--line-soft);border-radius:2px;}
+.step .n{font-family:var(--serif);font-size:2.2rem;color:var(--gold);line-height:1;opacity:.9;}
+.step h3{font-family:var(--serif);font-size:1.32rem;margin:12px 0 8px;color:var(--ivory);}
+.step p{margin:0;color:var(--muted);font-size:.94rem;}
 .fit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;}
 .fit .card{padding:34px 32px;background:var(--panel);border:1px solid var(--line-soft);border-radius:2px;}
 .fit .card h4{font-family:var(--sans);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;margin:0 0 20px;}
@@ -151,51 +127,37 @@ em{font-style:italic;color:var(--ivory);}
 .fit li:before{position:absolute;left:0;top:11px;font-size:.9rem;}
 .fit .yes li:before{content:"\2014";color:var(--gold);}
 .fit .no li:before{content:"\00D7";color:var(--muted-2);}
-
-/* ── Steps ──────────────────────────────────────────────── */
-.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;}
-.step{padding:34px 30px;background:var(--panel);border:1px solid var(--line-soft);border-radius:2px;}
-.step .n{font-family:var(--serif);font-size:2.4rem;color:var(--gold);line-height:1;opacity:.9;}
-.step h3{font-family:var(--serif);font-size:1.4rem;margin:14px 0 10px;color:var(--ivory);}
-.step p{margin:0;color:var(--muted);font-size:.97rem;}
-
-/* ── Band + CTA ─────────────────────────────────────────── */
+.callsteps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;}
+.callsteps .step .n{font-size:2.4rem;}
 .band{background:var(--navy-2);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);}
 .band .quote{font-family:var(--serif);font-size:clamp(1.4rem,2.4vw,1.95rem);line-height:1.4;color:var(--ivory);
-  border-left:1px solid var(--gold);padding-left:30px;max-width:40ch;font-weight:500;}
-.cta{text-align:center;background:radial-gradient(760px 380px at 50% -6%,rgba(198,162,76,.12),transparent 62%);}
-.cta h2{max-width:20ch;margin:0 auto;}
-.cta p{max-width:54ch;margin:20px auto 0;color:var(--muted);}
-.cta .btn-row{justify-content:center;margin-top:var(--s4);}
-.cta .fine{font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted-2);margin-top:24px;}
-
-/* ── Footer ─────────────────────────────────────────────── */
+  border-left:1px solid var(--gold);padding-left:30px;max-width:42ch;font-weight:500;}
+/* Qualifier form */
+.qual{max-width:660px;margin:var(--s4) auto 0;}
+.qual .field{margin-bottom:26px;}
+.qual .q{display:block;font-family:var(--sans);font-size:.98rem;color:var(--ivory);margin-bottom:12px;font-weight:500;}
+.qual .opts{display:flex;flex-wrap:wrap;gap:10px;}
+.qual .opts label{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1px solid var(--line);border-radius:2px;font-size:.9rem;color:var(--text);cursor:pointer;transition:border-color .18s,background .18s,color .18s;}
+.qual .opts input{accent-color:var(--gold);margin:0;}
+.qual .opts label:hover{border-color:var(--gold);}
+.qual .opts label:has(input:checked){border-color:var(--gold);background:rgba(198,168,76,.10);color:var(--ivory);}
+.qual .duo{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.qual input[type=text],.qual input[type=email]{width:100%;padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:2px;color:var(--ivory);font-family:var(--sans);font-size:.95rem;}
+.qual input:focus{outline:none;border-color:var(--gold);}
+.qual input::placeholder{color:var(--muted-2);}
+.qual .submit{margin-top:8px;}
+.qual .privacy{font-size:.78rem;color:var(--muted-2);margin-top:16px;}
+@media(max-width:620px){.qual .duo{grid-template-columns:1fr;}}
 footer{border-top:1px solid var(--line-soft);padding:48px 0;}
 footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start;}
-.fineprint{color:var(--muted-2);font-size:.78rem;line-height:1.7;max-width:64ch;margin:14px 0 0;}
+.fineprint{color:var(--muted-2);font-size:.78rem;line-height:1.7;max-width:70ch;margin:14px 0 0;}
 .flinks{display:flex;gap:14px;flex-wrap:wrap;align-items:center;font-size:.8rem;}
 .flinks a{color:var(--muted);} .flinks a:hover{color:var(--gold);} .flinks .sep{color:var(--line);}
-
-/* ── Reveal ─────────────────────────────────────────────── */
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out);}
 .reveal.in{opacity:1;transform:none;}
-@media(prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important;}
-  html{scroll-behavior:auto;} body{background-attachment:scroll;}}
-
-/* ── Responsive ─────────────────────────────────────────── */
-@media(max-width:820px){
-  .mech{grid-template-columns:1fr;gap:var(--s4);}
-  .figure{order:-1;max-width:440px;margin:0 auto;}
-}
-@media(max-width:680px){
-  .section{padding:68px 0;}
-  .wrap{padding:0 22px;}
-  .ledger{grid-template-columns:1fr;}
-  .ledger .opt:first-child{border-right:0;border-bottom:1px solid var(--line-soft);}
-  .fit,.steps{grid-template-columns:1fr;}
-  .hero .btn-row .btn{flex:1 1 auto;}
-  .topbar .brand small{display:none;}
-}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important;}html{scroll-behavior:auto;}body{background-attachment:scroll;}}
+@media(max-width:860px){.mech{grid-template-columns:1fr;gap:var(--s4);}.figure{order:-1;max-width:440px;margin:0 auto;}.steps{grid-template-columns:1fr 1fr;}}
+@media(max-width:680px){.section{padding:68px 0;}.wrap{padding:0 22px;}.ledger{grid-template-columns:1fr;}.ledger .opt:first-child{border-right:0;border-bottom:1px solid var(--line-soft);}.fit,.steps,.callsteps{grid-template-columns:1fr;}.hero .btn-row .btn{flex:1 1 auto;}.topbar .brand small{display:none;}}
 </style>
 </head>
 <body>
@@ -203,24 +165,25 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
 <div class="topbar">
   <div class="wrap">
     <div class="brand">VERTEX<span class="dot">.</span><small>Global Access</small></div>
-    <a class="btn btn-ghost sm" href="#review">Book a call</a>
+    <a class="btn btn-ghost sm" href="#book">Book a call</a>
   </div>
 </div>
 
 <!-- HERO -->
 <header class="hero">
   <div class="wrap reveal">
-    <p class="eyebrow">For UK founders &amp; investors based in the UAE</p>
-    <h1>Keep Dubai. Build the second option — before you need it.</h1>
-    <p class="sub">You don't have to leave. You only have to stop depending on one country for everything.</p>
-    <p class="intro">Dubai may still be the right base for your business, your lifestyle and your tax position.
-      The quieter question, worth asking while everything is working: <em>if you ever needed another option, is moving
-      back to Britain really the only one — and what would it do to everything you've built here?</em></p>
+    <p class="eyebrow">For UK founders, business owners &amp; directors</p>
+    <h1>Don't choose a second residency until you've stress-tested the decision.</h1>
+    <p class="sub">Most people are sold a passport. Almost no one pressure-tests the decision behind it.</p>
+    <p class="intro">A calm, private review of whether a second base makes sense for you — and, if it does, which one,
+      and in what order. The expensive mistake is rarely the country you pick. It's <em>choosing before anyone has tested
+      the decision against your company, your tax position, your family and your timing.</em> We start with the decision,
+      not the destination.</p>
     <div class="btn-row">
-      <a class="btn btn-gold" href="#review">Book a call</a>
-      <a class="btn btn-ghost" href="#mechanism">How it works</a>
+      <a class="btn btn-gold" href="#book">Book a private call</a>
+      <a class="btn btn-ghost" href="#how">How it works</a>
     </div>
-    <div class="seal"><span>By application</span><span class="dot"></span><span>Confidential</span><span class="dot"></span><span>Advisory, not a visa service</span></div>
+    <div class="seal"><span>By application</span><span class="dot"></span><span>Independent &amp; confidential</span><span class="dot"></span><span>Advisory, not a visa service</span></div>
   </div>
 </header>
 
@@ -228,69 +191,62 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
 <section class="section statement">
   <div class="wrap col">
     <p class="numeral">I</p>
-    <h2>Going back to Britain isn't always the simple answer.</h2>
-    <p class="body-lg dropcap" style="margin-top:28px;">For many people who left the UK for the Gulf, moving back home
-      isn't automatically the easy fallback. Would returning reset your UK tax residence? How many days a year could you
-      actually spend there first? What happens to the business, and to the structure that was set up on the way out?
-      Going back can raise as many questions as it answers — and rarely on your own timing.</p>
-    <p class="kicker">That is the real exposure. Not Dubai. <span class="gold">Having only one obvious fallback — when spending more time back in Britain can raise an entirely new set of tax-residence questions.</span></p>
+    <h2>The passport is the easy part. The decision is where it goes wrong.</h2>
+    <p class="body-lg dropcap" style="margin-top:28px;">Buying a second residency is simple — which is exactly the trap.
+      The decision touches everything at once: how your company profit and dividends are taxed, what happens around a sale
+      or an exit, where your family can live, and how much time you can spend where. Choose the wrong option — or the right
+      one in the wrong order — and you can create bigger problems than the one you set out to solve. And if a liquidity event
+      is anywhere on the horizon, the window to do it properly can close long before completion.</p>
+    <p class="kicker">The costly mistake is rarely the country. <span class="gold">It's choosing before the decision has been stress-tested.</span></p>
   </div>
 </section>
 
-<!-- II · TWO OR THREE -->
+<!-- II · TWO WAYS, OR THREE -->
 <section class="section">
   <div class="wrap">
     <p class="numeral">II</p>
-    <h2 style="max-width:22ch;">Most people believe they have two choices. There is a third.</h2>
+    <h2 style="max-width:24ch;">Most people take one of two paths. There's a better one.</h2>
     <div class="ledger reveal" style="margin-top:var(--s4);">
       <div class="opt">
-        <p class="lbl">Option one</p>
-        <h3>Keep the current setup</h3>
-        <p>Keep everything as it is — while your residence, banking, business and family mobility remain
-          concentrated in a single jurisdiction.</p>
+        <p class="lbl">Path one</p>
+        <h3>Do nothing</h3>
+        <p>Leave every option — and every Budget — resting on a single country, and hope the ground doesn't move under you.</p>
       </div>
       <div class="opt">
-        <p class="lbl">Option two</p>
-        <h3>Return and restructure</h3>
-        <p>Unwind the structure you built — potentially creating new UK tax-residence considerations alongside
-          everything already set up in the UAE, and rarely on your own timing.</p>
+        <p class="lbl">Path two</p>
+        <h3>Buy a passport</h3>
+        <p>Rush into a programme a salesperson recommended — often one they earn a commission on — without testing whether it's
+          right for you, or whether the timing even works.</p>
       </div>
     </div>
     <div class="third reveal">
-      <p class="lbl">The third option</p>
-      <h3>Keep Dubai as Plan A — and build a second legal base as Plan B.</h3>
-      <p>A second country where you and your family already have the right to live if things change — established
-        calmly, in advance, and designed with your existing tax, business and lifestyle structure in mind, so the
-        implications are understood before anything changes.</p>
+      <p class="lbl">The better way</p>
+      <h3>Stress-test the decision first. Then build it, calmly, in the right order.</h3>
+      <p>Test whether a second base makes sense at all, which one genuinely fits your position, and the sequence to put it in
+        place — before you commit money, and before you need it. The decision comes first; the destination comes second.</p>
     </div>
   </div>
 </section>
 
 <!-- III · MECHANISM -->
-<section class="section statement" id="mechanism">
+<section class="section statement" id="how">
   <div class="wrap">
     <p class="numeral">III</p>
     <div class="mech">
       <div>
         <h2 style="max-width:16ch;">We architect personal jurisdictions.</h2>
-        <p class="mono-note">Successful international founders routinely diversify investments, currencies, businesses —
-          sometimes even banking relationships. Yet residence is often left concentrated in a single country: the one
-          thing that quietly decides <span class="ivory">where their family is actually allowed to live.</span></p>
-        <ul class="points">
-          <li><h3>Start from what works</h3><p>We begin with your existing UAE setup, nationality and tax position — not a brochure of programmes.</p></li>
-          <li><h3>Add, don't replace</h3><p>The aim isn't to move you. It's to stop one jurisdiction from carrying your residence, banking, business and family all at once.</p></li>
-          <li><h3>Sequence it properly</h3><p>The right options, considered in the right order — so a second base is designed around the structure already working for you.</p></li>
-        </ul>
+        <p class="mono-note" style="margin-top:20px;">Successful founders diversify their investments, their currencies,
+          sometimes even their business. Yet almost everyone leaves the thing that matters most concentrated in a single
+          country: <span class="ivory">where they and their family are legally based — and taxed.</span></p>
+        <p class="mono-note" style="margin-top:18px;">We don't start with a shortlist of programmes. We start with your
+          company, your income, your family and your timing — then work out whether a second base is right, which one, and how.
+          <span class="ivory">We're paid for the advice, not for placing you into a programme</span> — so the recommendation is
+          the one that fits you, including the reasons <em>not</em> to choose a country, and the best, expected and worst case.</p>
       </div>
-      <figure class="figure reveal" aria-label="Diagram: one country carrying everything, versus a distributed second base.">
+      <figure class="figure reveal" aria-label="Diagram: one country carrying everything, versus a second base sharing the load.">
         <svg viewBox="-28 0 500 360" xmlns="http://www.w3.org/2000/svg" role="img">
-          <defs>
-            <radialGradient id="g" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stop-color="#E6D29A"/><stop offset="100%" stop-color="#C6A24C"/>
-            </radialGradient>
-          </defs>
-          <!-- concentration: six labels tethered to a single node -->
-          <g font-family="Inter,sans-serif" font-size="10.5" letter-spacing="1.4" fill="#8B93A2" text-transform="uppercase">
+          <defs><radialGradient id="g" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#E6D29A"/><stop offset="100%" stop-color="#C6A24C"/></radialGradient></defs>
+          <g font-family="Inter,sans-serif" font-size="10.5" letter-spacing="1.4" fill="#8B93A2">
             <g stroke="#212A3C" stroke-width="1">
               <line x1="120" y1="180" x2="34" y2="70"/><line x1="120" y1="180" x2="30" y2="180"/>
               <line x1="120" y1="180" x2="34" y2="290"/><line x1="120" y1="180" x2="120" y2="54"/>
@@ -308,15 +264,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
             <circle cx="120" cy="180" r="26" fill="none" stroke="#C6A24C" stroke-opacity=".35"/>
             <text x="120" y="214" text-anchor="middle" fill="#5A6273" letter-spacing="2">ONE BASE</text>
           </g>
-          <!-- the dividing line -->
           <line x1="300" y1="46" x2="300" y2="314" stroke="#212A3C" stroke-dasharray="2 6"/>
-          <!-- distributed: two nodes sharing the load -->
           <g font-family="Inter,sans-serif" font-size="10.5" letter-spacing="1.4">
             <g stroke="#C6A24C" stroke-opacity=".5" stroke-width="1">
-              <line x1="360" y1="128" x2="418" y2="86"/><line x1="360" y1="128" x2="342" y2="70"/>
-              <line x1="360" y1="128" x2="330" y2="150"/>
-              <line x1="392" y1="248" x2="430" y2="214"/><line x1="392" y1="248" x2="360" y2="300"/>
-              <line x1="392" y1="248" x2="428" y2="286"/>
+              <line x1="360" y1="128" x2="418" y2="86"/><line x1="360" y1="128" x2="342" y2="70"/><line x1="360" y1="128" x2="330" y2="150"/>
+              <line x1="392" y1="248" x2="430" y2="214"/><line x1="392" y1="248" x2="360" y2="300"/><line x1="392" y1="248" x2="428" y2="286"/>
               <line x1="360" y1="128" x2="392" y2="248" stroke-dasharray="3 4"/>
             </g>
             <circle cx="360" cy="128" r="11" fill="url(#g)"/>
@@ -327,73 +279,138 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
         <figcaption>One country, or two — same life, different exposure</figcaption>
       </figure>
     </div>
-    <p class="mono-note" style="max-width:64ch;">Dubai might remain the best place for your business and your current
-      tax position. Another country might give your family long-term residence. Another may offer stronger mobility.
-      The goal isn't to replace Dubai — it's to stop asking one country to do everything.
-      <span class="ivory">Keep what works. Build what's missing.</span></p>
   </div>
 </section>
 
-<!-- IV · FIT -->
+<!-- IV · THE PROCESS -->
 <section class="section">
   <div class="wrap">
     <p class="numeral">IV</p>
+    <h2 style="max-width:20ch;">Four steps. In the right order.</h2>
+    <div class="steps reveal" style="margin-top:var(--s4);">
+      <div class="step"><div class="n">1</div><h3>Choose it</h3><p>Decide whether a second base makes sense at all, and which one genuinely fits your position — not a brochure's.</p></div>
+      <div class="step"><div class="n">2</div><h3>Stress-test it</h3><p>Pressure-test it against your tax, business, family and timing — including the reasons not to, and the worst case.</p></div>
+      <div class="step"><div class="n">3</div><h3>Build it</h3><p>Put it in place calmly, in the right sequence, coordinated through vetted, independent professionals.</p></div>
+      <div class="step"><div class="n">4</div><h3>Keep it working</h3><p>Renewals, day-counts, tax-residency and rule changes — watched, so a structure that was right stays right.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- V · FIT -->
+<section class="section statement">
+  <div class="wrap">
+    <p class="numeral">V</p>
     <h2>Who this is for — and who it isn't.</h2>
     <div class="fit reveal" style="margin-top:var(--s4);">
       <div class="card yes">
         <h4>This is for you if</h4>
         <ul>
-          <li>You're a UK-connected founder, investor or family based in the UAE, with £150k+ in non-employment income.</li>
-          <li>You want to keep Dubai's advantages, not walk away from them.</li>
-          <li>You'd rather build the second option calmly now than scramble later.</li>
-          <li>You care that a second base is planned around your existing tax position, not treated as a separate decision.</li>
+          <li>You're a UK founder, business owner or director earning £150k+ (or with a business sale/liquidity event ahead).</li>
+          <li>You're weighing a second residency and want it done properly — a plan, not a passport off a shelf.</li>
+          <li>You'd rather stress-test the decision now than discover the problem after paying for the wrong one.</li>
+          <li>You want independent advice, without a commission deciding which country you're pointed toward.</li>
         </ul>
       </div>
       <div class="card no">
         <h4>This isn't for you if</h4>
         <ul>
-          <li>You're shopping for the cheapest passport or a quick visa.</li>
+          <li>You just want the cheapest passport or a quick visa.</li>
           <li>You want a guarantee, or a country named on a first call.</li>
-          <li>You're looking for someone to tell you it's simple. It isn't, and we won't.</li>
+          <li>You want someone to tell you it's simple. It isn't, and we won't.</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- V · THE CALL -->
-<section class="section statement">
+<!-- VI · THE CALL -->
+<section class="section">
   <div class="wrap">
-    <p class="numeral">V</p>
+    <p class="numeral">VI</p>
     <h2>What actually happens on the call.</h2>
     <p class="body-lg" style="margin-top:16px;">A working session, not a sales script.</p>
-    <div class="steps reveal" style="margin-top:var(--s4);">
-      <div class="step"><div class="n">i</div><h3>We map your exposure</h3><p>Where one jurisdiction is currently carrying your residence, banking, business, tax and family.</p></div>
-      <div class="step"><div class="n">ii</div><h3>We shape a Plan B</h3><p>The kind of second base that would fit your position — and the order it would need to be built in.</p></div>
-      <div class="step"><div class="n">iii</div><h3>You get an honest read</h3><p>Including whether it's worth pursuing at all. If there isn't enough here to be worth your time, we'll say so.</p></div>
+    <div class="callsteps reveal" style="margin-top:var(--s4);">
+      <div class="step"><div class="n">i</div><h3>We pressure-test your situation</h3><p>Your company, income, family and timing — and whether a second base even makes sense for you.</p></div>
+      <div class="step"><div class="n">ii</div><h3>We show what a plan looks like</h3><p>If it's a fit: the shortlist, the trade-offs, and the right order to build it in.</p></div>
+      <div class="step"><div class="n">iii</div><h3>You get an honest read</h3><p>Including if it isn't worth pursuing. If we don't think there's enough here for you, we'll say so.</p></div>
     </div>
+    <p class="mono-note" style="margin-top:var(--s4);max-width:64ch;">The call itself is complimentary and without obligation.
+      If it's a fit, the next step is a <span class="ivory">paid diagnostic — a full, written plan built around your position</span>
+      — and you'll know exactly what you're deciding before you commit to anything. No pressure on the call.</p>
   </div>
 </section>
 
 <!-- BAND -->
 <section class="section band">
   <div class="wrap">
-    <p class="quote">"The goal isn't to leave Dubai. It's to make sure that, if circumstances change, the next decision is still yours."</p>
+    <p class="quote">"The goal isn't to leave. It's to make sure that, whatever changes, the next decision is still yours."</p>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="section cta" id="review">
+<!-- VII · BOOK / QUALIFIER -->
+<section class="section" id="book">
   <div class="wrap col" style="margin:0 auto;">
-    <p class="eyebrow" style="text-align:center;">Book a call</p>
-    <h2>Build the second door while the first is still open.</h2>
-    <p>Tell us a little about your situation and we'll arrange a confidential call — no pitch, no obligation.
-      A genuine read on whether a tax-aware Plan B makes sense for you, and what the right one might look like.</p>
-    <div class="btn-row">
-      <!-- Interim mailto — replace with qualifier form → Dan's booking calendar (Calendly / Cal.com) -->
-      <a class="btn btn-gold" href="mailto:contact@vertexglobalaccessgroup.com?subject=Book%20a%20call%20%E2%80%94%20second-base%20strategy">Book a call</a>
-    </div>
-    <p class="fine">By application · Confidential · For £150k+ non-employment income</p>
+    <p class="eyebrow" style="text-align:center;">Request your private call</p>
+    <h2 class="center" style="text-align:center;max-width:22ch;margin:0 auto;">A few questions, so the call is worth your time.</h2>
+    <p class="muted center" style="text-align:center;max-width:56ch;margin:18px auto 0;">We take on a limited number of clients and speak with people we can genuinely help. Tell us a little about your situation and we'll be in touch to arrange a confidential call.</p>
+
+    <form class="qual" id="qualForm" onsubmit="return submitQual(event)">
+      <div class="field">
+        <span class="q">1. Which best describes you?</span>
+        <div class="opts">
+          <label><input type="radio" name="role" value="Founder / business owner" required> Founder / business owner</label>
+          <label><input type="radio" name="role" value="Company director"> Company director</label>
+          <label><input type="radio" name="role" value="Investor"> Investor</label>
+          <label><input type="radio" name="role" value="Senior professional"> Senior professional</label>
+        </div>
+      </div>
+      <div class="field">
+        <span class="q">2. Is a business sale or major liquidity event on the horizon?</span>
+        <div class="opts">
+          <label><input type="radio" name="event" value="Yes, within 12 months" required> Yes — within 12 months</label>
+          <label><input type="radio" name="event" value="In 1–3 years"> In 1–3 years</label>
+          <label><input type="radio" name="event" value="No / not applicable"> No / not applicable</label>
+        </div>
+      </div>
+      <div class="field">
+        <span class="q">3. Roughly, your annual income (or expected proceeds)?</span>
+        <div class="opts">
+          <label><input type="radio" name="income" value="Under £150k" required> Under £150k</label>
+          <label><input type="radio" name="income" value="£150k–£300k"> £150k–£300k</label>
+          <label><input type="radio" name="income" value="£300k–£1m"> £300k–£1m</label>
+          <label><input type="radio" name="income" value="£1m+"> £1m+</label>
+        </div>
+      </div>
+      <div class="field">
+        <span class="q">4. What's prompting this now?</span>
+        <div class="opts">
+          <label><input type="radio" name="driver" value="Rising UK tax" required> Rising UK tax</label>
+          <label><input type="radio" name="driver" value="An upcoming sale / exit"> An upcoming sale / exit</label>
+          <label><input type="radio" name="driver" value="Options for my family"> Options for my family</label>
+          <label><input type="radio" name="driver" value="Lifestyle / security"> Lifestyle / security</label>
+          <label><input type="radio" name="driver" value="Just exploring"> Just exploring</label>
+        </div>
+      </div>
+      <div class="field">
+        <span class="q">5. How soon are you looking to act?</span>
+        <div class="opts">
+          <label><input type="radio" name="timeline" value="Within 90 days" required> Within 90 days</label>
+          <label><input type="radio" name="timeline" value="3–12 months"> 3–12 months</label>
+          <label><input type="radio" name="timeline" value="Exploring"> Exploring</label>
+        </div>
+      </div>
+      <div class="field">
+        <span class="q">6. Where should we reach you?</span>
+        <div class="duo">
+          <input type="text" name="name" placeholder="Full name" required>
+          <input type="email" name="email" placeholder="Email address" required>
+        </div>
+      </div>
+      <div class="btn-row submit">
+        <button type="submit" class="btn btn-gold">Request my call</button>
+      </div>
+      <p class="privacy">By application · Confidential · For UK founders and business owners earning £150k+. We'll only use your details to arrange your call.</p>
+    </form>
   </div>
 </section>
 
@@ -401,9 +418,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
   <div class="wrap">
     <div>
       <div class="brand" style="font-size:1.2rem;">VERTEX<span class="dot">.</span></div>
-      <p class="fineprint">Vertex Global Access provides strategic advisory and coordination only. Nothing on this page
-        is legal, tax or financial advice, and no specific outcome, residency or tax result is promised. Obtain your own
-        advice from suitably qualified professionals before acting. © Vertex Global Access. All rights reserved.</p>
+      <p class="fineprint">Vertex Global Access provides strategic advisory and coordination only. We are not a law firm and
+        are not authorised or regulated by the Financial Conduct Authority. We do not provide regulated legal, tax, immigration
+        or financial advice, and no specific outcome, residency or tax result is promised. Regulated advice and execution are
+        provided by independent, appropriately qualified professionals, and you should take independent regulated advice before
+        acting. © Vertex Global Access. All rights reserved.</p>
     </div>
     <div class="flinks">
       <a href="privacy.html">Privacy</a><span class="sep">·</span>
@@ -420,6 +439,23 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
     var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});},{threshold:.14});
     els.forEach(function(e){io.observe(e);});
   })();
+  // Interim: compose an email with the answers. Replace with a real form handler + booking calendar.
+  function submitQual(e){
+    e.preventDefault();
+    var f=e.target, g=function(n){var el=f.elements[n];return el?el.value:'';};
+    var body=[
+      'New private-call request — Vertex','',
+      '1. Role: '+g('role'),
+      '2. Liquidity event: '+g('event'),
+      '3. Income: '+g('income'),
+      '4. Driver: '+g('driver'),
+      '5. Timeline: '+g('timeline'),
+      '6. Name: '+g('name'),
+      '   Email: '+g('email')
+    ].join('\n');
+    window.location.href='mailto:contact@vertexglobalaccessgroup.com?subject='+encodeURIComponent('Private call request — '+g('name'))+'&body='+encodeURIComponent(body);
+    return false;
+  }
 </script>
 
 </body>
