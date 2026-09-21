@@ -132,6 +132,17 @@ em{font-style:italic;color:var(--ivory);}
 .band{background:var(--navy-2);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);}
 .band .quote{font-family:var(--serif);font-size:clamp(1.4rem,2.4vw,1.95rem);line-height:1.4;color:var(--ivory);
   border-left:1px solid var(--gold);padding-left:30px;max-width:42ch;font-weight:500;}
+.process{margin-top:var(--s4);border-top:1px solid var(--line-soft);}
+.process .prow{display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,4vw,46px);padding:32px 0;border-bottom:1px solid var(--line-soft);}
+.process .pn{font-family:var(--serif);font-size:2.1rem;color:var(--gold);line-height:1;opacity:.9;min-width:2.2ch;}
+.process .pc h3{font-family:var(--serif);font-size:1.5rem;color:var(--ivory);margin:0 0 10px;}
+.process .pc p{margin:0 0 .7em;color:var(--muted);font-size:1rem;max-width:60ch;}
+.process .pc .tag{font-family:var(--sans);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted-2);margin:0 0 8px;}
+.process .pc .tag.free{color:var(--gold);}
+.process .pc ul{list-style:none;margin:.5em 0 0;padding:0;columns:2;column-gap:24px;}
+.process .pc ul li{position:relative;padding:5px 0 5px 18px;font-size:.94rem;color:var(--text);break-inside:avoid;}
+.process .pc ul li:before{content:"\2014";position:absolute;left:0;color:var(--gold);}
+@media(max-width:620px){.process .prow{grid-template-columns:1fr;gap:6px;}.process .pc ul{columns:1;}}
 /* Qualifier form */
 .qual{max-width:660px;margin:var(--s4) auto 0;}
 .qual .field{margin-bottom:26px;}
@@ -165,7 +176,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
 <div class="topbar">
   <div class="wrap">
     <div class="brand">VERTEX<span class="dot">.</span><small>Global Access</small></div>
-    <a class="btn btn-ghost sm" href="#book">Book a call</a>
+    <a class="btn btn-ghost sm" href="#book">Book a Fit Call</a>
   </div>
 </div>
 
@@ -180,8 +191,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
       the decision against your company, your tax position, your family and your timing.</em> We start with the decision,
       not the destination.</p>
     <div class="btn-row">
-      <a class="btn btn-gold" href="#book">Book a private call</a>
-      <a class="btn btn-ghost" href="#how">How it works</a>
+      <a class="btn btn-gold" href="#book">Book a 20-min Fit Call</a>
+      <a class="btn btn-ghost" href="#process">How it works</a>
     </div>
     <div class="seal"><span>By application</span><span class="dot"></span><span>Independent &amp; confidential</span><span class="dot"></span><span>Advisory, not a visa service</span></div>
   </div>
@@ -282,16 +293,58 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
   </div>
 </section>
 
-<!-- IV · THE PROCESS -->
-<section class="section">
+<!-- IV · HOW THE PROCESS WORKS -->
+<section class="section" id="process">
   <div class="wrap">
     <p class="numeral">IV</p>
-    <h2 style="max-width:20ch;">Four steps. In the right order.</h2>
-    <div class="steps reveal" style="margin-top:var(--s4);">
-      <div class="step"><div class="n">1</div><h3>Choose it</h3><p>Decide whether a second base makes sense at all, and which one genuinely fits your position — not a brochure's.</p></div>
-      <div class="step"><div class="n">2</div><h3>Stress-test it</h3><p>Pressure-test it against your tax, business, family and timing — including the reasons not to, and the worst case.</p></div>
-      <div class="step"><div class="n">3</div><h3>Build it</h3><p>Put it in place calmly, in the right sequence, coordinated through vetted, independent professionals.</p></div>
-      <div class="step"><div class="n">4</div><h3>Keep it working</h3><p>Renewals, day-counts, tax-residency and rule changes — watched, so a structure that was right stays right.</p></div>
+    <h2 style="max-width:20ch;">How the process works.</h2>
+    <p class="body-lg" style="margin-top:14px;">Choose it. Stress-test it. Build it. Keep it working.</p>
+    <div class="process reveal">
+      <div class="prow">
+        <div class="pn">01</div>
+        <div class="pc">
+          <p class="tag free">Complimentary · 20 minutes</p>
+          <h3>Private Fit Call</h3>
+          <p>We start with a short, 20-minute introductory conversation. We learn what you're considering and whether Vertex is likely to be genuinely useful to you.</p>
+          <p>There's no charge for this conversation, and it isn't the diagnostic. It's simply where we both decide whether there's a good fit — and if we don't think there is, we'll say so.</p>
+          <div class="btn-row" style="margin-top:6px;"><a class="btn btn-gold sm" href="#book">Book a 20-min Fit Call</a></div>
+        </div>
+      </div>
+      <div class="prow">
+        <div class="pn">02</div>
+        <div class="pc">
+          <p class="tag">Paid engagement</p>
+          <h3>The Personal Jurisdiction Diagnostic</h3>
+          <p>If there's a fit, we begin the Vertex Personal Jurisdiction Diagnostic — a paid engagement, scoped and priced before we start, so you always know what you're committing to.</p>
+          <p>We gather the relevant information, research the options, compare them, stress-test them against your position, and build your recommended strategy.</p>
+        </div>
+      </div>
+      <div class="prow">
+        <div class="pn">03</div>
+        <div class="pc">
+          <h3>Decide</h3>
+          <p>You decide what happens next — with a clear plan in front of you. The answer might be to proceed, to choose another option, to wait, or to do nothing. There's no pressure to go further.</p>
+        </div>
+      </div>
+      <div class="prow">
+        <div class="pn">04</div>
+        <div class="pc">
+          <h3>Implementation</h3>
+          <p>If you decide to proceed and want Vertex to continue, we coordinate implementation with the appropriate legal, tax, immigration and other professional partners. Implementation is scoped and priced separately.</p>
+        </div>
+      </div>
+      <div class="prow">
+        <div class="pn">05</div>
+        <div class="pc">
+          <h3>Establish</h3>
+          <p>Obtaining residency is often only the beginning. Depending on the jurisdiction and your situation, the next stage can involve coordinating:</p>
+          <ul>
+            <li>Residence documentation</li><li>Banking</li><li>Tax registration</li><li>Insurance</li>
+            <li>Dependants</li><li>Property</li><li>Local professional support</li><li>Renewal requirements</li>
+          </ul>
+          <p style="margin-top:.8em;">The aim isn't to leave you with an approval and then make you work out the rest yourself.</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -323,23 +376,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
   </div>
 </section>
 
-<!-- VI · THE CALL -->
-<section class="section">
-  <div class="wrap">
-    <p class="numeral">VI</p>
-    <h2>What actually happens on the call.</h2>
-    <p class="body-lg" style="margin-top:16px;">A working session, not a sales script.</p>
-    <div class="callsteps reveal" style="margin-top:var(--s4);">
-      <div class="step"><div class="n">i</div><h3>We pressure-test your situation</h3><p>Your company, income, family and timing — and whether a second base even makes sense for you.</p></div>
-      <div class="step"><div class="n">ii</div><h3>We show what a plan looks like</h3><p>If it's a fit: the shortlist, the trade-offs, and the right order to build it in.</p></div>
-      <div class="step"><div class="n">iii</div><h3>You get an honest read</h3><p>Including if it isn't worth pursuing. If we don't think there's enough here for you, we'll say so.</p></div>
-    </div>
-    <p class="mono-note" style="margin-top:var(--s4);max-width:64ch;">The call itself is complimentary and without obligation.
-      If it's a fit, the next step is a <span class="ivory">paid diagnostic — a full, written plan built around your position</span>
-      — and you'll know exactly what you're deciding before you commit to anything. No pressure on the call.</p>
-  </div>
-</section>
-
 <!-- BAND -->
 <section class="section band">
   <div class="wrap">
@@ -350,9 +386,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
 <!-- VII · BOOK / QUALIFIER -->
 <section class="section" id="book">
   <div class="wrap col" style="margin:0 auto;">
-    <p class="eyebrow" style="text-align:center;">Request your private call</p>
-    <h2 class="center" style="text-align:center;max-width:22ch;margin:0 auto;">A few questions, so the call is worth your time.</h2>
-    <p class="muted center" style="text-align:center;max-width:56ch;margin:18px auto 0;">We take on a limited number of clients and speak with people we can genuinely help. Tell us a little about your situation and we'll be in touch to arrange a confidential call.</p>
+    <p class="eyebrow" style="text-align:center;">Book your 20-min Fit Call</p>
+    <h2 class="center" style="text-align:center;max-width:24ch;margin:0 auto;">A few questions, so your Fit Call is worth your time.</h2>
+    <p class="muted center" style="text-align:center;max-width:56ch;margin:18px auto 0;">We take on a limited number of clients and speak with people we can genuinely help. Tell us a little about your situation and we'll arrange your complimentary 20-minute Fit Call.</p>
 
     <form class="qual" id="qualForm" onsubmit="return submitQual(event)">
       <div class="field">
@@ -407,7 +443,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
         </div>
       </div>
       <div class="btn-row submit">
-        <button type="submit" class="btn btn-gold">Request my call</button>
+        <button type="submit" class="btn btn-gold">Request my Fit Call</button>
       </div>
       <p class="privacy">By application · Confidential · For UK founders and business owners earning £150k+. We'll only use your details to arrange your call.</p>
     </form>
@@ -444,7 +480,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
     e.preventDefault();
     var f=e.target, g=function(n){var el=f.elements[n];return el?el.value:'';};
     var body=[
-      'New private-call request — Vertex','',
+      'New Fit Call request — Vertex','',
       '1. Role: '+g('role'),
       '2. Liquidity event: '+g('event'),
       '3. Income: '+g('income'),
@@ -453,7 +489,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
       '6. Name: '+g('name'),
       '   Email: '+g('email')
     ].join('\n');
-    window.location.href='mailto:contact@vertexglobalaccessgroup.com?subject='+encodeURIComponent('Private call request — '+g('name'))+'&body='+encodeURIComponent(body);
+    window.location.href='mailto:contact@vertexglobalaccessgroup.com?subject='+encodeURIComponent('Fit Call request — '+g('name'))+'&body='+encodeURIComponent(body);
     return false;
   }
 </script>
